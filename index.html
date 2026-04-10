@@ -30,6 +30,15 @@ h1{font-size:18px;font-weight:600;margin-bottom:4px;}
 .na{background:#D6EAFF;border-color:#378ADD;color:#032547;}
 .foot{display:flex;gap:4px;flex-wrap:wrap;margin-top:4px;}
 .iico{display:inline-block;width:6px;height:6px;background:#E24B4A;border-radius:50%;margin-right:4px;vertical-align:middle;}
+
+.wftags{display:flex;gap:3px;flex-wrap:wrap;margin-top:5px;}
+.wftag{font-size:8.5px;font-weight:700;padding:2px 6px;border-radius:3px;white-space:nowrap;}
+.wf01{background:#FFF3C4;color:#7A5000;border:1px solid #E8C84A;}
+.wf02{background:#E8E0FF;color:#3C3489;border:1px solid #AFA9EC;}
+.wf03{background:#FFE8D6;color:#7A3010;border:1px solid #F0997B;}
+.wf04{background:#D6F5E8;color:#085041;border:1px solid #5DCAA5;}
+.wf05{background:#FFD6D6;color:#791F1F;border:1px solid #F09595;}
+.note.wf-used{outline:2px solid #1A1A1A;outline-offset:1px;}
 </style>
 </head>
 <body>
@@ -43,6 +52,13 @@ h1{font-size:18px;font-weight:600;margin-bottom:4px;}
   <span class="stag sd">데스크리서치</span>
   <span class="stag ss">설문조사</span>
   <span class="stag si">인터뷰</span>
+  <div style="width:1px;height:14px;background:#ccc"></div>
+  <span style="font-size:11px;color:#555;font-weight:500;">와이어프레임 연결:</span>
+  <span class="wftag wf01">→ WF01 홈피드</span>
+  <span class="wftag wf02">→ WF02 질문템플릿</span>
+  <span class="wftag wf03">→ WF03 뱃지설정</span>
+  <span class="wftag wf04">→ WF04 질문상세</span>
+  <span class="wftag wf05">→ WF05 보상</span>
   <div class="flow">행동 흐름 →</div>
 </div>
 <div class="divider"></div>
@@ -64,8 +80,8 @@ h1{font-size:18px;font-weight:600;margin-bottom:4px;}
   <div class="note ni"><span class="iico"></span>전공 정보 수요는 일상적·반복적. 학기 내내 지속 발생</div>
   <div class="note ni"><span class="iico"></span>재료·공모전·피드백 — 종류별로 긴급도와 접근 방식이 다름</div>
   <div class="sec">아이디어·기능</div>
-  <div class="note na">상황별 게시판: 재료 / 공모전 / 취업·진로 / 과제·피드백</div>
-  <div class="note na">전공 태그 시스템 (#시각디자인 #공예 #사진)</div>
+  <div class="note wf-used na">상황별 게시판: 재료 / 공모전 / 취업·진로 / 과제·피드백</div>
+  <div class="note wf-used na">전공 태그 시스템 (#시각디자인 #공예 #사진)</div>
 </div>
 </div>
 
@@ -97,12 +113,12 @@ h1{font-size:18px;font-weight:600;margin-bottom:4px;}
 <div class="col-body">
   <div class="sec">데이터</div>
   <div class="note nd">질문 망설임 경험 100% (자주 29% / 가끔 71%)<div class="foot"><span class="stag ss">설문조사 n=17</span></div></div>
-  <div class="note nd">"아무도 답 안 해주면 어떡하지가 먼저 든다"<div class="foot"><span class="stag si">인터뷰 P1</span></div></div>
+  <div class="note wf-used nd">"아무도 답 안 해주면 어떡하지가 먼저 든다"<div class="wftags"><span class="wftag wf02">→ WF02 질문템플릿</span></div><div class="foot"><span class="stag si">인터뷰 P1</span></div></div>
   <div class="note nd">4학년 허들 상대적으로 낮음 — "그냥 올린다"<div class="foot"><span class="stag si">인터뷰 P4</span></div></div>
   <div class="note nd">LMGTFY — 기본 질문 스스로 검열<div class="foot"><span class="stag si">인터뷰 P6</span></div></div>
-  <div class="note nd">"어디서부터 어떻게 질문해야 할지 막막함"<div class="foot"><span class="stag si">인터뷰 P8</span></div></div>
+  <div class="note wf-used nd">"어디서부터 어떻게 질문해야 할지 막막함"<div class="wftags"><span class="wftag wf02">→ WF02 질문템플릿</span></div><div class="foot"><span class="stag si">인터뷰 P8</span></div></div>
   <div class="sec">인사이트</div>
-  <div class="note ni"><span class="iico"></span>질문 고려 단계에서 이미 포기 결정이 일어남 — 버튼 누르기 전에 이탈</div>
+  <div class="note wf-used ni"><span class="iico"></span>질문 고려 단계에서 이미 포기 결정이 일어남 — 버튼 누르기 전에 이탈</div>
   <div class="note ni"><span class="iico"></span>저학년=무응답 불안 / 고학년=수치심 — 학년별 허들의 종류가 다름</div>
   <div class="sec">아이디어·기능</div>
   <div class="note na">질문 전 "비슷한 질문 N개 있어요" 표시</div>
@@ -119,16 +135,16 @@ h1{font-size:18px;font-weight:600;margin-bottom:4px;}
   <div class="note nd">망설인 이유 1위 눈치가 보여서 53%<div class="foot"><span class="stag ss">설문조사</span></div></div>
   <div class="note nd">2위 적절한 사람 없음 35% / 3위 어디에 물어야 할지 12%<div class="foot"><span class="stag ss">설문조사</span></div></div>
   <div class="note nd">"고학년인데 이것도 모르냐는 말 들을까봐"<div class="foot"><span class="stag si">인터뷰 P8</span></div></div>
-  <div class="note nd">"익명성이 너무 높으면 오히려 꺼려진다. 옆에 있는 사람일 수 있어서"<div class="foot"><span class="stag si">인터뷰 P5</span></div></div>
+  <div class="note wf-used nd">"익명성이 너무 높으면 오히려 꺼려진다. 옆에 있는 사람일 수 있어서"<div class="wftags"><span class="wftag wf03">→ WF03 뱃지설정</span></div><div class="foot"><span class="stag si">인터뷰 P5</span></div></div>
   <div class="note nd">"익명인데도 좀 뻘쭘할 것 같다"<div class="foot"><span class="stag si">인터뷰 P7</span></div></div>
   <div class="note nd">해결 못하고 넘어간다 6%<div class="foot"><span class="stag ss">설문조사</span></div></div>
   <div class="sec">인사이트</div>
-  <div class="note ni"><span class="iico"></span>익명성만으로 심리적 허들 해결 안 됨 — 무응답 수치심은 익명을 뛰어넘음</div>
-  <div class="note ni"><span class="iico"></span>과도한 익명성은 역효과. 옆 사람일 수 있다는 두려움이 오히려 진입 막음</div>
+  <div class="note wf-used ni"><span class="iico"></span>익명성만으로 심리적 허들 해결 안 됨 — 무응답 수치심은 익명을 뛰어넘음</div>
+  <div class="note wf-used ni"><span class="iico"></span>과도한 익명성은 역효과. 옆 사람일 수 있다는 두려움이 오히려 진입 막음</div>
   <div class="note ni"><span class="iico"></span>정보 부재가 아닌 물어볼 구조 부재가 핵심 문제</div>
   <div class="sec">아이디어·기능</div>
   <div class="note na">질문 템플릿 버튼 (재료 추천 / 공모전 경험자 계세요? 등)</div>
-  <div class="note na">전공·학년 뱃지 선택 공개 (맥락 있는 익명)</div>
+  <div class="note wf-used na">전공·학년 뱃지 선택 공개 (맥락 있는 익명)</div>
   <div class="note na">"비슷한 고민 가진 N명이 질문했어요" 표시</div>
 </div>
 </div>
@@ -158,16 +174,16 @@ h1{font-size:18px;font-weight:600;margin-bottom:4px;}
 <div class="col-head"><span><span class="col-num">06</span>서비스 진입<br>콜드 스타트</span></div>
 <div class="col-body">
   <div class="sec">데이터</div>
-  <div class="note nd">"게시글 없으면 왜 없지? — 안 들어간다"<div class="foot"><span class="stag si">인터뷰 P3·P4</span></div></div>
-  <div class="note nd">"활성화 여부가 신뢰 기준. 게시글 수보다 답변 수가 중요"<div class="foot"><span class="stag si">인터뷰 P8</span></div></div>
+  <div class="note wf-used nd">"게시글 없으면 왜 없지? — 안 들어간다"<div class="wftags"><span class="wftag wf01">→ WF01 홈피드</span></div><div class="foot"><span class="stag si">인터뷰 P3·P4</span></div></div>
+  <div class="note wf-used nd">"활성화 여부가 신뢰 기준. 게시글 수보다 답변 수가 중요"<div class="wftags"><span class="wftag wf01">→ WF01 홈피드</span><span class="wftag wf04">→ WF04 질문상세</span></div><div class="foot"><span class="stag si">인터뷰 P8</span></div></div>
   <div class="note nd">개설일 표시 없으면 유령 커뮤니티로 인식해 이탈<div class="foot"><span class="stag si">인터뷰 P5</span></div></div>
   <div class="note nd">네이버 카페 등급제 장벽으로 이탈한 경험<div class="foot"><span class="stag si">인터뷰 P2</span></div></div>
   <div class="note nd">비슷한 질문 반복 = 정보 미정리 의심<div class="foot"><span class="stag si">인터뷰 P6</span></div></div>
   <div class="sec">인사이트</div>
-  <div class="note ni"><span class="iico"></span>빈 플랫폼 = 신뢰 0 = 즉시 이탈. 콜드 스타트는 설계해야 함 — 저절로 해결 안 됨</div>
-  <div class="note ni"><span class="iico"></span>게시글 수 아닌 답변 수가 활성화 지표. 질문만 쌓인 공간은 이미 실패한 커뮤니티</div>
+  <div class="note wf-used ni"><span class="iico"></span>빈 플랫폼 = 신뢰 0 = 즉시 이탈. 콜드 스타트는 설계해야 함 — 저절로 해결 안 됨</div>
+  <div class="note wf-used ni"><span class="iico"></span>게시글 수 아닌 답변 수가 활성화 지표. 질문만 쌓인 공간은 이미 실패한 커뮤니티</div>
   <div class="sec">아이디어·기능</div>
-  <div class="note na">시드 콘텐츠 설계 — 운영자·선배가 자주 묻는 질문 사전 게시 (P0)</div>
+  <div class="note wf-used na">시드 콘텐츠 설계 — 운영자·선배가 자주 묻는 질문 사전 게시 (P0)</div>
   <div class="note na">개설일·답변 수·활성 지표 UI 표시</div>
   <div class="note na">등급제 없이 바로 질문 가능한 구조</div>
 </div>
@@ -178,21 +194,21 @@ h1{font-size:18px;font-weight:600;margin-bottom:4px;}
 <div class="col-head"><span><span class="col-num">07</span>질문<br>게시</span></div>
 <div class="col-body">
   <div class="sec">데이터</div>
-  <div class="note nd">에타 공식 글 삭제 불가 → 올리기 전 더 망설임<div class="foot"><span class="stag si">인터뷰 P4</span></div></div>
-  <div class="note nd">"댓글만 원했는데 DM이 오는 게 불쾌. 너무 싫어"<div class="foot"><span class="stag si">인터뷰 P4</span></div></div>
-  <div class="note nd">상황을 글로 정리하는 게 번거로움<div class="foot"><span class="stag si">인터뷰 P6</span></div></div>
-  <div class="note nd">"답변 달리게끔 어떻게 써야 하나" — 글 구조화 어려움<div class="foot"><span class="stag si">인터뷰 P8</span></div></div>
-  <div class="note nd">"언제까지 답변이 필요해요 기한 설정 있으면 좋겠다"<div class="foot"><span class="stag si">인터뷰 P7</span></div></div>
+  <div class="note wf-used nd">에타 공식 글 삭제 불가 → 올리기 전 더 망설임<div class="wftags"><span class="wftag wf03">→ WF03 뱃지설정</span></div><div class="foot"><span class="stag si">인터뷰 P4</span></div></div>
+  <div class="note wf-used nd">"댓글만 원했는데 DM이 오는 게 불쾌. 너무 싫어"<div class="wftags"><span class="wftag wf03">→ WF03 뱃지설정</span></div><div class="foot"><span class="stag si">인터뷰 P4</span></div></div>
+  <div class="note wf-used nd">상황을 글로 정리하는 게 번거로움<div class="wftags"><span class="wftag wf02">→ WF02 질문템플릿</span></div><div class="foot"><span class="stag si">인터뷰 P6</span></div></div>
+  <div class="note wf-used nd">"답변 달리게끔 어떻게 써야 하나" — 글 구조화 어려움<div class="wftags"><span class="wftag wf02">→ WF02 질문템플릿</span></div><div class="foot"><span class="stag si">인터뷰 P8</span></div></div>
+  <div class="note wf-used nd">"언제까지 답변이 필요해요 기한 설정 있으면 좋겠다"<div class="wftags"><span class="wftag wf03">→ WF03 뱃지설정</span></div><div class="foot"><span class="stag si">인터뷰 P7</span></div></div>
   <div class="note nd">디자인의 시각적 요소를 언어로 표현하기 어려움<div class="foot"><span class="stag si">인터뷰 P5</span></div></div>
   <div class="sec">인사이트</div>
-  <div class="note ni"><span class="iico"></span>빈 칸에 글 쓰는 것 자체가 높은 허들 — 0에서 시작하는 게 가장 어려움</div>
-  <div class="note ni"><span class="iico"></span>삭제 불가·DM 강제는 올리기 전 망설임을 구조적으로 증가시킴</div>
+  <div class="note wf-used ni"><span class="iico"></span>빈 칸에 글 쓰는 것 자체가 높은 허들 — 0에서 시작하는 게 가장 어려움</div>
+  <div class="note wf-used ni"><span class="iico"></span>삭제 불가·DM 강제는 올리기 전 망설임을 구조적으로 증가시킴</div>
   <div class="sec">아이디어·기능</div>
-  <div class="note na">질문 템플릿 버튼 (P0 필수)</div>
-  <div class="note na">게시글 삭제 기능 (P0 필수)</div>
-  <div class="note na">DM 허용 ON/OFF 선택 (P1)</div>
+  <div class="note wf-used na">질문 템플릿 버튼 (P0 필수)</div>
+  <div class="note wf-used na">게시글 삭제 기능 (P0 필수)</div>
+  <div class="note wf-used na">DM 허용 ON/OFF 선택 (P1)</div>
   <div class="note na">이미지·파일 첨부 + 썸네일 미리보기</div>
-  <div class="note na">답변 기한 설정 기능 (P2)</div>
+  <div class="note wf-used na">답변 기한 설정 기능 (P2)</div>
 </div>
 </div>
 
@@ -201,22 +217,22 @@ h1{font-size:18px;font-weight:600;margin-bottom:4px;}
 <div class="col-head"><span><span class="col-num">08</span>답변<br>· 재방문</span></div>
 <div class="col-body">
   <div class="sec">데이터</div>
-  <div class="note nd">"답변이 무조건 달리는 기능이 있으면 쓸 것 같아요" — 링커리어 사례<div class="foot"><span class="stag si">인터뷰 P8</span></div></div>
-  <div class="note nd">내 게시물 답변 알림이 재방문 동기 — 6명 언급<div class="foot"><span class="stag si">인터뷰 P1·P2·P4·P6·P8</span></div></div>
+  <div class="note wf-used nd">"답변이 무조건 달리는 기능이 있으면 쓸 것 같아요" — 링커리어 사례<div class="wftags"><span class="wftag wf04">→ WF04 질문상세</span></div><div class="foot"><span class="stag si">인터뷰 P8</span></div></div>
+  <div class="note wf-used nd">내 게시물 답변 알림이 재방문 동기 — 6명 언급<div class="wftags"><span class="wftag wf04">→ WF04 질문상세</span><span class="wftag wf05">→ WF05 보상</span></div><div class="foot"><span class="stag si">인터뷰 P1·P2·P4·P6·P8</span></div></div>
   <div class="note nd">광고성·반복 알림 전원 거부. 맞춤 알림 필터 요구<div class="foot"><span class="stag si">인터뷰 P5</span></div></div>
-  <div class="note nd">"둘 다의 이점이 있어야 한다. 답변자도 작업 공유 기회가 있어야"<div class="foot"><span class="stag si">인터뷰 P6</span></div></div>
-  <div class="note nd">트위터에서 답변자 포트폴리오 보고 신뢰 판단<div class="foot"><span class="stag si">인터뷰 P6·P8</span></div></div>
-  <div class="note nd">'도움이 됐어요' 버튼 긍정 다수 / P5 "전혀 신뢰 안 함" (소수 의견)<div class="foot"><span class="stag si">인터뷰</span></div></div>
+  <div class="note wf-used nd">"둘 다의 이점이 있어야 한다. 답변자도 작업 공유 기회가 있어야"<div class="wftags"><span class="wftag wf05">→ WF05 보상</span></div><div class="foot"><span class="stag si">인터뷰 P6</span></div></div>
+  <div class="note wf-used nd">트위터에서 답변자 포트폴리오 보고 신뢰 판단<div class="wftags"><span class="wftag wf05">→ WF05 보상</span></div><div class="foot"><span class="stag si">인터뷰 P6·P8</span></div></div>
+  <div class="note wf-used nd">'도움이 됐어요' 버튼 긍정 다수 / P5 "전혀 신뢰 안 함" (소수 의견)<div class="wftags"><span class="wftag wf01">→ WF01 홈피드</span><span class="wftag wf04">→ WF04 질문상세</span></div><div class="foot"><span class="stag si">인터뷰</span></div></div>
   <div class="sec">인사이트</div>
-  <div class="note ni"><span class="iico"></span>답변 보장이 플랫폼 사용의 전제 조건 — 보장이 없으면 첫 질문을 올리지 않음</div>
-  <div class="note ni"><span class="iico"></span>공급자(답변자) 인센티브 없으면 지속 불가 — 질문자만의 플랫폼은 붕괴</div>
-  <div class="note ni"><span class="iico"></span>학년 뱃지보다 포트폴리오·작업물이 더 강력한 신뢰 지표</div>
+  <div class="note wf-used ni"><span class="iico"></span>답변 보장이 플랫폼 사용의 전제 조건 — 보장이 없으면 첫 질문을 올리지 않음</div>
+  <div class="note wf-used ni"><span class="iico"></span>공급자(답변자) 인센티브 없으면 지속 불가 — 질문자만의 플랫폼은 붕괴</div>
+  <div class="note wf-used ni"><span class="iico"></span>학년 뱃지보다 포트폴리오·작업물이 더 강력한 신뢰 지표</div>
   <div class="sec">아이디어·기능</div>
-  <div class="note na">답변 보장 시스템: 멘토 풀 or 답변 독려 알림 (P0 필수)</div>
-  <div class="note na">내 게시물 답변 push 알림 (P1)</div>
-  <div class="note na">도움이 됐어요 버튼 — 신뢰도 누적 (P1)</div>
-  <div class="note na">선택적 공개 레이어: 익명→학년·전공 뱃지 ON/OFF (P1)</div>
-  <div class="note na">답변자 포트폴리오 간략 프로필 노출 (P3)</div>
+  <div class="note wf-used na">답변 보장 시스템: 멘토 풀 or 답변 독려 알림 (P0 필수)</div>
+  <div class="note wf-used na">내 게시물 답변 push 알림 (P1)</div>
+  <div class="note wf-used na">도움이 됐어요 버튼 — 신뢰도 누적 (P1)</div>
+  <div class="note wf-used na">선택적 공개 레이어: 익명→학년·전공 뱃지 ON/OFF (P1)</div>
+  <div class="note wf-used na">답변자 포트폴리오 간략 프로필 노출 (P3)</div>
 </div>
 </div>
 
